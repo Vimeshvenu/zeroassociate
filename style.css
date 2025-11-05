@@ -1,0 +1,30 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #4A00E0, #8E2DE2);
+  color: white;
+}
+header {
+  text-align: center;
+  padding: 2em;
+  background: rgba(0, 0, 0, 0.4);
+}
+section {
+  padding: 2em;
+  margin: 1em;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+footer {
+  text-align: center;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.5);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin: 0.5em 0;
+}

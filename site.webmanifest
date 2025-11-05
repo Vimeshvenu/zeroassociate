@@ -1,0 +1,19 @@
+{
+  "name": "Zero Associates",
+  "short_name": "ZeroA",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#7209b7",
+  "background_color": "#3a0ca3",
+  "display": "standalone"
+}

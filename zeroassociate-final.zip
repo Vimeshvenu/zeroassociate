@@ -1,0 +1,13 @@
+/zeroassociate-final
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   ├── logo.png
+│   ├── hero-bg.jpg
+│   ├── gallery1.jpg
+│   ├── gallery2.jpg
+│   ├── gallery3.jpg
+│   ├── brochure-banner.jpg
+└── favicon.ico

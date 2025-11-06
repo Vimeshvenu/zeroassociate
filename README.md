@@ -5,6 +5,14 @@
 
 ---
 
+### 🛠️ **Status & Info**
+![GitHub last commit](https://img.shields.io/github/last-commit/Vimeshvenu/zeroassociate?color=purple)
+![GitHub repo size](https://img.shields.io/github/repo-size/Vimeshvenu/zeroassociate?color=violet)
+![Website](https://img.shields.io/website?url=https://zeroassociate.vercel.app&label=Live%20Status&color=brightgreen)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Vimeshvenu.zeroassociate&color=blueviolet)
+
+---
+
 ### 📄 **About**
 Zero Associates Trading, Contracting & Maintenance Services is a trusted provider offering **Air Conditioning, Cleaning, Flooring, Painting, and Food Trading** services with excellence and reliability across Qatar.
 
@@ -41,9 +49,20 @@ Zero Associates Trading, Contracting & Maintenance Services is a trusted provide
 
 ---
 
+### 📱 **Scan to Visit Website**
+<p align="center">
+  <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://zeroassociate.vercel.app&size=150x150" alt="Zero Associates QR Code" />
+</p>
+
+---
+
 ### ✨ **How to Use**
-1️⃣ Go to GitHub repo → Click **Add file → Create new file**  
-2️⃣ File name → `README.md`  
-3️⃣ Paste the above content  
-4️⃣ Scroll down → Select **Commit directly to the main branch**  
-5️⃣ Click **✅ Commit changes**
+1️⃣ Go to your GitHub repo → Click **Add file → Edit README.md**  
+2️⃣ Replace with this upgraded version  
+3️⃣ Scroll down → Commit directly to the main branch ✅  
+4️⃣ Refresh — you’ll see live badges + QR + visitor counter in action!
+
+---
+
+💜 **Powered by Vimesh Venu | Zero Associates – Qatar**
+

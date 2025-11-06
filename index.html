@@ -4,20 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zero Associates | زيرو أسوشيتس</title>
-  <meta name="description" content="Zero Associates Trading, Contracting & Maintenance Services - Qatar">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico">
+  <meta name="description" content="Zero Associates Trading, Contracting & Maintenance Services - Qatar" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
 <header class="header">
-  <img src="logo.png" alt="Zero Associates Logo" class="logo">
+  <img src="assets/logo.png" alt="Zero Associates Logo" class="logo">
   <h1 id="site-title">Zero Associates | زيرو أسوشيتس</h1>
   <button id="lang-switch">عربي / English</button>
 </header>
 
 <section class="hero">
-  <img src="brochure-bg.jpg" alt="Background" class="hero-bg">
   <div class="hero-text">
     <h2 id="welcome-text">Welcome to Zero Associates</h2>
     <p id="tagline">Trading • Contracting • Maintenance Services</p>
@@ -34,7 +31,7 @@
 
 <footer class="footer">
   <p>
-    C.R No : 168031 | 📞 +974 5509 2962 | ✉️ zerotfsqatar@gmail.com<br>
+    C.R No : 168031 | 📞 +974 5509 2962 | ✉️ zerotfsqatar@gmail.com<br />
     Zone 90, Street 720, Building 186, Floor 1, Al Wakra — Qatar
   </p>
 </footer>
@@ -42,24 +39,22 @@
 <script>
   const langSwitch = document.getElementById('lang-switch');
   let isArabic = false;
-
   langSwitch.addEventListener('click', () => {
     isArabic = !isArabic;
     if (isArabic) {
-      document.getElementById('welcome-text').innerText = "مرحبا بكم في زيرو أسوشيتس";
-      document.getElementById('tagline').innerText = "التجارة • المقاولات • خدمات الصيانة";
-      document.getElementById('about-title').innerText = "من نحن";
-      document.getElementById('about-text').innerText = "زيرو أسوشيتس هي شركة موثوقة في قطر تقدم خدمات التكييف والتنظيف والأرضيات والدهان وتجارة الأغذية — ملتزمون بالتميز والموثوقية.";
-      document.getElementById('site-title').innerText = "زيرو أسوشيتس | Zero Associates";
+      document.getElementById('welcome-text').innerText = 'مرحبا بكم في زيرو أسوشيتس';
+      document.getElementById('tagline').innerText = 'التجارة • المقاولات • خدمات الصيانة';
+      document.getElementById('about-title').innerText = 'من نحن';
+      document.getElementById('about-text').innerText = 'زيرو أسوشيتس هي شركة موثوقة في قطر تقدم خدمات التكييف والتنظيف والأرضيات والدهان وتجارة الأغذية — ملتزمون بالتميز والموثوقية.';
+      document.getElementById('site-title').innerText = 'زيرو أسوشيتس | Zero Associates';
     } else {
-      document.getElementById('welcome-text').innerText = "Welcome to Zero Associates";
-      document.getElementById('tagline').innerText = "Trading • Contracting • Maintenance Services";
-      document.getElementById('about-title').innerText = "Who We Are";
-      document.getElementById('about-text').innerText = "Zero Associates is a trusted provider in Qatar offering services in Air Conditioning, Cleaning, Flooring, Painting, and Food Trading — committed to excellence and reliability.";
-      document.getElementById('site-title').innerText = "Zero Associates | زيرو أسوشيتس";
+      document.getElementById('welcome-text').innerText = 'Welcome to Zero Associates';
+      document.getElementById('tagline').innerText = 'Trading • Contracting • Maintenance Services';
+      document.getElementById('about-title').innerText = 'Who We Are';
+      document.getElementById('about-text').innerText = 'Zero Associates is a trusted provider in Qatar offering services in Air Conditioning, Cleaning, Flooring, Painting, and Food Trading — committed to excellence and reliability.';
+      document.getElementById('site-title').innerText = 'Zero Associates | زيرو أسوشيتس';
     }
   });
 </script>
-
 </body>
 </html>

@@ -1,5 +1,173 @@
 <p align="center">
-  <img <p align="center">
+  <<!-- <!-- Profile README for Vimesh Venu -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Poppins&size=24&duration=3000&pause=1000&color=4B0082&center=true&vCenter=true&width=700&lines=👋+Hello,+I'm+Vimesh+Venu!;💻+Freelance+Web+Developer+from+Kerala;🌍+Crafting+Clean+and+Responsive+Websites" alt="Typing Animation" />
+</p>
+
+---
+
+## 👨‍💻 About Me
+Hi! I'm **Vimesh Venu**, a freelance **web developer and designer** from Kerala, India.  
+I love creating **clean, multilingual, and responsive websites** using HTML, CSS, and JavaScript.  
+Recently, I developed a bilingual website for **Zero Associates – Qatar**, focusing on professional UI and accessibility.
+
+> 💡 “Code should be simple, elegant, and human.”
+
+---
+
+## ⚙️ Skills
+- 🧱 HTML5, CSS3, JavaScript (Vanilla JS)
+- 🧩 Responsive Web Design (Mobile-first)
+- 🎨 UI/UX Design (Figma, Canva)
+- ☁️ Hosting with GitHub & Vercel
+- 🔍 SEO Basics & Site Optimization
+
+---
+
+## 🚀 Featured Project
+### 🌿 [Zero Associates Website (Qatar)](https://zeroassociate.vercel.app)
+> A bilingual (English + Arabic) corporate website for a Qatar-based trading & contracting company.  
+Built with clean design, simple animations, and complete responsiveness.
+
+<p align="center">
+  <a href="https://zeroassociate.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Visit_Zero_Associates_Website-purple?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Website"/>
+  </a>
+</p>
+
+---
+
+## 📫 Contact
+📧 Email: [vimeshvenu234@gmail.com](mailto:vimeshvenu234@gmail.com)  
+📍 Location: Thrissur, Kerala, India  
+
+---
+
+## 📊 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Vimeshvenu&show_icons=true&theme=default&hide_border=true" alt="Vimesh Venu GitHub Stats" />
+</p>
+
+---
+
+<p align="center">
+  💼 *Designed & Maintained by Vimesh Venu*  
+  <br>
+  🌿 *Freelance Web Developer from Kerala*
+</p>
+ README for Vimesh Venu -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Poppins&size=24&duration=3000&pause=1000&color=4B0082&center=true&vCenter=true&width=700&lines=👋+Hello,+I'm+Vimesh+Venu!;💻+Freelance+Web+Developer+from+Kerala;🌍+Crafting+Clean+and+Responsive+Websites" alt="Typing Animation" />
+</p>
+
+---
+
+## 👨‍💻 About Me
+Hi! I'm **Vimesh Venu**, a freelance **web developer and designer** from Kerala, India.  
+I love creating **clean, multilingual, and responsive websites** using HTML, CSS, and JavaScript.  
+Recently, I developed a bilingual website for **Zero Associates – Qatar**, focusing on professional UI and accessibility.
+
+> 💡 “Code should be simple, elegant, and human.”
+
+---
+
+## ⚙️ Skills
+- 🧱 HTML5, CSS3, JavaScript (Vanilla JS)
+- 🧩 Responsive Web Design (Mobile-first)
+- 🎨 UI/UX Design (Figma, Canva)
+- ☁️ Hosting with GitHub & Vercel
+- 🔍 SEO Basics & Site Optimization
+
+---
+
+## 🚀 Featured Project
+### 🌿 [Zero Associates Website (Qatar)](https://zeroassociate.vercel.app)
+> A bilingual (English + Arabic) corporate website for a Qatar-based trading & contracting company.  
+Built with clean design, simple animations, and complete responsiveness.
+
+<p align="center">
+  <a href="https://zeroassociate.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Visit_Zero_Associates_Website-purple?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Website"/>
+  </a>
+</p>
+
+---
+
+## 📫 Contact
+📧 Email: [vimeshvenu234@gmail.com](mailto:vimeshvenu234@gmail.com)  
+📍 Location: Thrissur, Kerala, India  
+
+---
+
+## 📊 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Vimeshvenu&show_icons=true&theme=default&hide_border=true" alt="Vimesh Venu GitHub Stats" />
+</p>
+
+---
+
+<p align="center">
+  💼 *Designed & Maintained by Vimesh Venu*  
+  <br>
+  🌿 *Freelance Web Developer from Kerala*
+</p>
+ <<!-- Profile README for Vimesh Venu -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Poppins&size=24&duration=3000&pause=1000&color=4B0082&center=true&vCenter=true&width=700&lines=👋+Hello,+I'm+Vimesh+Venu!;💻+Freelance+Web+Developer+from+Kerala;🌍+Crafting+Clean+and+Responsive+Websites" alt="Typing Animation" />
+</p>
+
+---
+
+## 👨‍💻 About Me
+Hi! I'm **Vimesh Venu**, a freelance **web developer and designer** from Kerala, India.  
+I love creating **clean, multilingual, and responsive websites** using HTML, CSS, and JavaScript.  
+Recently, I developed a bilingual website for **Zero Associates – Qatar**, focusing on professional UI and accessibility.
+
+> 💡 “Code should be simple, elegant, and human.”
+
+---
+
+## ⚙️ Skills
+- 🧱 HTML5, CSS3, JavaScript (Vanilla JS)
+- 🧩 Responsive Web Design (Mobile-first)
+- 🎨 UI/UX Design (Figma, Canva)
+- ☁️ Hosting with GitHub & Vercel
+- 🔍 SEO Basics & Site Optimization
+
+---
+
+## 🚀 Featured Project
+### 🌿 [Zero Associates Website (Qatar)](https://zeroassociate.vercel.app)
+> A bilingual (English + Arabic) corporate website for a Qatar-based trading & contracting company.  
+Built with clean design, simple animations, and complete responsiveness.
+
+<p align="center">
+  <a href="https://zeroassociate.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Visit_Zero_Associates_Website-purple?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Website"/>
+  </a>
+</p>
+
+---
+
+## 📫 Contact
+📧 Email: [vimeshvenu234@gmail.com](mailto:vimeshvenu234@gmail.com)  
+📍 Location: Thrissur, Kerala, India  
+
+---
+
+## 📊 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Vimeshvenu&show_icons=true&theme=default&hide_border=true" alt="Vimesh Venu GitHub Stats" />
+</p>
+
+---
+
+<p align="center">
+  💼 *Designed & Maintained by Vimesh Venu*  
+  <br>
+  🌿 *Freelance Web Developer from Kerala*
+</p>
+ align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Poppins&size=25&duration=3000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&lines=🌿+Welcome+to+Zero+Associates!;✨+Trading+•+Contracting+•+Maintenance+Services+–+Qatar;💜+Developed+by+Vimesh+Venu" alt="Typing Animation" />
 </p>
 

@@ -1,60 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zero Associates | زيرو أسوشيتس</title>
-  <meta name="description" content="Zero Associates Trading, Contracting & Maintenance Services - Qatar" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zero Associates — Trading • Contracting • Maintenance Services | Qatar</title>
+
+  <!-- SEO meta -->
+  <meta name="description" content="Zero Associates — Trading, Contracting & Maintenance Services in Qatar. From contracting to care — excellence in every service." />
+  <meta name="keywords" content="Zero Associates, Contracting, Maintenance, Trading, Qatar, AC, Cleaning, Painting, Tiling" />
+  <meta name="author" content="Zero Associates | Vimesh Venu" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Zero Associates — Trading • Contracting • Maintenance Services" />
+  <meta property="og:description" content="Zero Associates — From contracting to care — excellence in every service. Based in Qatar." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:url" content="https://yourdomain-or-github.io/zeroassociate/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@Vimeshvenu" />
+
+  <!-- Canonical (change to your hosted URL) -->
+  <link rel="canonical" href="https://yourdomain-or-github.io/zeroassociate/" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Zero Associates Trading, Contracting & Maintenance Services",
+    "image": "https://yourdomain-or-github.io/zeroassociate/assets/logo.png",
+    "telephone": "+97455092962",
+    "email": "zerotfsqatar@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Zone 90, Street 720, Building 186, Floor 1",
+      "addressLocality": "Al Wakra",
+      "addressCountry": "Qatar"
+    },
+    "url": "https://yourdomain-or-github.io/zeroassociate/"
+  }
+  </script>
 </head>
-<body>
-<header class="header">
-  <img src="assets/logo.png" alt="Zero Associates Logo" class="logo">
-  <h1 id="site-title">Zero Associates | زيرو أسوشيتس</h1>
-  <button id="lang-switch">عربي / English</button>
-</header>
+<body class="page">
 
-<section class="hero">
-  <div class="hero-text">
-    <h2 id="welcome-text">Welcome to Zero Associates</h2>
-    <p id="tagline">Trading • Contracting • Maintenance Services</p>
-  </div>
-</section>
+  <!-- NAV (minimal for brochure style) -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#hero" aria-label="Zero Associates Home">
+        <img src="assets/logo.png" alt="Zero Associates Logo" class="nav-logo" />
+      </a>
+      <div class="nav-actions">
+        <a class="btn ghost" href="#contact">Contact</a>
+        <a class="btn" href="#gallery">Gallery</a>
+      </div>
+    </div>
+  </nav>
 
-<section class="about">
-  <h2 id="about-title">Who We Are</h2>
-  <p id="about-text">
-    Zero Associates is a trusted provider in Qatar offering services in Air Conditioning, Cleaning, Flooring,
-    Painting, and Food Trading — committed to excellence and reliability.
-  </p>
-</section>
+  <!-- HERO -->
+  <header id="hero" class="hero" role="banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <img src="assets/logo.png" alt="Zero Associates logo" class="hero-logo" loading="lazy" width="220" height="220" />
+      <h1 class="hero-title" aria-hidden="false">
+        <!-- Three balanced lines, each shows English + Arabic -->
+        <span class="line">
+          <span class="en">Zero Associates</span>
+          <span class="ar" dir="rtl">زيرو أسوشيتس</span>
+        </span>
+        <span class="line">
+          <span class="en">Trading • Contracting • Maintenance Services</span>
+          <span class="ar" dir="rtl">التجارة • المقاولات • خدمات الصيانة</span>
+        </span>
+        <span class="line">
+          <span class="en">Qatar 🇶🇦</span>
+          <span class="ar" dir="rtl">قطر 🇶🇦</span>
+        </span>
+      </h1>
 
-<footer class="footer">
-  <p>
-    C.R No : 168031 | 📞 +974 5509 2962 | ✉️ zerotfsqatar@gmail.com<br />
-    Zone 90, Street 720, Building 186, Floor 1, Al Wakra — Qatar
-  </p>
-</footer>
+      <p class="hero-sub">From Contracting to Care — Excellence in Every Service</p>
 
-<script>
-  const langSwitch = document.getElementById('lang-switch');
-  let isArabic = false;
-  langSwitch.addEventListener('click', () => {
-    isArabic = !isArabic;
-    if (isArabic) {
-      document.getElementById('welcome-text').innerText = 'مرحبا بكم في زيرو أسوشيتس';
-      document.getElementById('tagline').innerText = 'التجارة • المقاولات • خدمات الصيانة';
-      document.getElementById('about-title').innerText = 'من نحن';
-      document.getElementById('about-text').innerText = 'زيرو أسوشيتس هي شركة موثوقة في قطر تقدم خدمات التكييف والتنظيف والأرضيات والدهان وتجارة الأغذية — ملتزمون بالتميز والموثوقية.';
-      document.getElementById('site-title').innerText = 'زيرو أسوشيتس | Zero Associates';
-    } else {
-      document.getElementById('welcome-text').innerText = 'Welcome to Zero Associates';
-      document.getElementById('tagline').innerText = 'Trading • Contracting • Maintenance Services';
-      document.getElementById('about-title').innerText = 'Who We Are';
-      document.getElementById('about-text').innerText = 'Zero Associates is a trusted provider in Qatar offering services in Air Conditioning, Cleaning, Flooring, Painting, and Food Trading — committed to excellence and reliability.';
-      document.getElementById('site-title').innerText = 'Zero Associates | زيرو أسوشيتس';
+      <div class="hero-ctas">
+        <a class="btn large" href="assets/Zero_Associates_Profile.pdf" target="_blank" rel="noopener">View Profile PDF</a>
+        <a class="btn outline large" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <main>
+    <section id="about" class="about container">
+      <h2 class="section-title">
+        <span class="title-main">About Us</span>
+        <span class="title-ar" dir="rtl">من نحن</span>
+        <span class="underline" aria-hidden="true"></span>
+      </h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Zero Associates is a Qatar-based full-service provider specializing in air conditioning installation & maintenance, professional cleaning, painting, floor tiling, and general contracting. We combine technical excellence with a customer-first approach to deliver reliable, safe and long-lasting projects for residential and commercial clients.
+          </p>
+
+          <p class="arabic" dir="rtl">
+            زيرو أسوشيتس هي شركة مقرها قطر تقدم خدمات متكاملة في تركيب وصيانة التكييف، التنظيف المهني، الدهانات، تركيب البلاط والمقاولات العامة. نضمن الجودة والسلامة ورضا العملاء في كل مشروع.
+          </p>
+
+          <ul class="about-quick">
+            <li>✅ Licensed & Insured</li>
+            <li>✅ Skilled Technicians</li>
+            <li>✅ Quick Response — Doha & Al Wakra</li>
+          </ul>
+        </div>
+
+        <div class="about-image">
+          <picture>
+            <source srcset="assets/about-480.webp" type="image/webp" />
+            <img src="assets/about-800.jpg" alt="Technicians at work — Zero Associates" loading="lazy" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery container">
+      <h2 class="section-title">
+        <span class="title-main">Our Services Gallery</span>
+        <span class="title-ar" dir="rtl">معرض خدماتنا</span>
+        <span class="underline" aria-hidden="true"></span>
+      </h2>
+
+      <p class="gallery-intro">Explore recent work in Air Conditioning, Cleaning, Painting, Tiling and more.</p>
+
+      <div id="galleryGrid" class="grid gallery-grid" aria-live="polite">
+        <!-- Images inserted dynamically by script -->
+      </div>
+
+      <noscript class="notice">Enable JavaScript to load dynamic gallery images or place images in assets/ and reference them directly.</noscript>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2 class="section-title">
+        <span class="title-main">Contact</span>
+        <span class="title-ar" dir="rtl">اتصل بنا</span>
+        <span class="underline" aria-hidden="true"></span>
+      </h2>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Get in touch</h3>
+          <p><strong>Phone:</strong> <a href="tel:+97455092962">+974 5509 2962</a></p>
+          <p><strong>Email:</strong> <a href="mailto:zerotfsqatar@gmail.com">zerotfsqatar@gmail.com</a></p>
+          <p><strong>Address:</strong> Zone 90, Street 720, Building 186, Floor 1, Al Wakra, Qatar</p>
+
+          <div class="contact-actions">
+            <a class="btn" href="https://wa.me/97455092962" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn outline" href="mailto:zerotfsqatar@gmail.com">Email Us</a>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <h3>Location</h3>
+          <iframe
+            title="Zero Associates location map"
+            src="https://www.google.com/maps?q=Zone+90+Street+720+Building+186+Al+Wakra+Qatar&output=embed"
+            loading="lazy"
+            aria-hidden="false"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 Zero Associates | Developed by Vimesh Venu</p>
+      <nav class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scripts: dynamic gallery loader, lazy fade-in -->
+  <script>
+    // Replace or extend these links with actual Google image URLs or hosted assets
+    const galleryLinks = [
+      // Example external images (replace with Google image links or your hosted images)
+      "https://images.unsplash.com/photo-1581092795367-44f3149d8f10?w=1200&q=80&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1509879809043-0a77f0f08a3e?w=1200&q=80&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&q=80&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "assets/gallery-ac.jpg",   // local fallback images (put optimized files in assets/)
+      "assets/gallery-clean.jpg",
+      "assets/gallery-paint.jpg",
+      "assets/gallery-tiling.jpg"
+    ];
+
+    const galleryGrid = document.getElementById('galleryGrid');
+
+    function createCard(src, index) {
+      const card = document.createElement('figure');
+      card.className = 'gallery-item';
+      card.innerHTML = `
+        <a href="${src}" target="_blank" rel="noopener">
+          <img data-src="${src}" alt="Service image ${index+1}" loading="lazy" />
+          <figcaption>View</figcaption>
+        </a>
+      `;
+      return card;
     }
-  });
-</script>
+
+    // Render placeholders first for layout stability
+    galleryLinks.forEach((src, i) => {
+      galleryGrid.appendChild(createCard(src, i));
+    });
+
+    // Lazy load images + fade-in using IntersectionObserver
+    const io = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target.querySelector('img');
+          if (img && img.dataset.src) {
+            img.src = img.dataset.src;
+            img.addEventListener('load', () => {
+              entry.target.classList.add('loaded');
+            });
+            delete img.dataset.src;
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '100px 0px' });
+
+    document.querySelectorAll('.gallery-item').forEach(item => io.observe(item));
+
+    // Smooth scroll behavior for in-page links (enhanced UX)
+    (function enableSmoothScroll() {
+      document.documentElement.style.scrollBehavior = 'smooth';
+    })();
+  </script>
+
 </body>
 </html>

@@ -16,20 +16,31 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ffffff;
+  background: #fff;
   padding: 15px 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.header .arabic,
-.header .english {
+.header .arabic {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #003366;
+  color: #6a0dad; /* purple */
 }
 
 .header .logo img {
-  height: 70px;
+  height: 75px;
+  animation: glow 3s infinite alternate;
+}
+
+.header .english {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #000;
+}
+
+@keyframes glow {
+  0% { filter: drop-shadow(0 0 0px #6a0dad); }
+  100% { filter: drop-shadow(0 0 12px #6a0dad); }
 }
 
 /* Hero Section */
@@ -42,7 +53,7 @@ body {
   width: 100%;
   height: 450px;
   object-fit: cover;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .hero-text {
@@ -51,7 +62,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
 .hero-text h1 {
@@ -66,14 +77,12 @@ section {
 }
 
 h2 {
-  color: #003366;
+  color: #6a0dad;
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-/* Services & Gallery */
-.service-grid,
-.gallery-grid {
+.service-grid, .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -85,10 +94,12 @@ h2 {
   background: #f9f9f9;
   border-radius: 12px;
   transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
 }
 
 .service-card:hover {
-  background: #003366;
+  background: #6a0dad;
   color: white;
   transform: translateY(-5px);
 }
@@ -96,57 +107,21 @@ h2 {
 .gallery img {
   width: 100%;
   border-radius: 12px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
 }
 
 .gallery img:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Footer */
 footer {
-  background: #001f3f;
+  background: #1a1a1a;
   color: #fff;
   text-align: center;
   padding: 40px 10px;
   font-size: 0.9rem;
-}
-
-.footer-line {
-  width: 60%;
-  height: 1px;
-  background: #555;
-  margin: 15px auto;
-  opacity: 0.4;
-}
-
-.credit {
-  margin-top: 15px;
-  font-size: 0.85rem;
-  color: #cccccc;
-  line-height: 1.6;
-}
-
-.credit a {
-  color: #a3d2ff;
-  text-decoration: none;
-}
-
-.credit a:hover {
-  text-decoration: underline;
-}
-
-/* Glow animation for VIMESH VENU */
-.credit strong {
-  color: #9a60ff;
-  animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px #9a60ff, 0 0 10px #7d4cff, 0 0 20px #4b0082;
-  }
-  to {
-    text-shadow: 0 0 10px #c58cff, 0 0 20px #9a60ff, 0 0 30px #7d4cff;
-  }
 }

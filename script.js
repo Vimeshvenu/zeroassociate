@@ -1,5 +1,5 @@
 window.addEventListener("scroll", () => {
-  const elements = document.querySelectorAll("section, .service-card, .gallery img");
+  const elements = document.querySelectorAll(".service-card, .gallery img");
   elements.forEach(el => {
     const pos = el.getBoundingClientRect().top;
     if (pos < window.innerHeight - 100) {

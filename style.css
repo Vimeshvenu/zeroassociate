@@ -432,3 +432,26 @@ a:focus, button:focus {outline:3px solid rgba(138,43,226,0.24);outline-offset:3p
 
 /* Utility */
 .notice{padding:0.8rem;background:#fff6d9;border-radius:8px;color:#6a4b00}
+.footer-line {
+  width: 60%;
+  height: 1px;
+  background: #555;
+  margin: 15px auto;
+  opacity: 0.4;
+}
+
+.credit {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.credit a {
+  color: #a3d2ff;
+  text-decoration: none;
+}
+
+.credit a:hover {
+  text-decoration: underline;
+}

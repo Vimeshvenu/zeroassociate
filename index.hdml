@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero Associates | Qatar</title>
+  <meta name="description" content="Zero Associates – Trading, Contracting & Maintenance Services in Qatar. Delivering excellence with quality service.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="arabic">زيرو أسوشيتس</div>
+    <div class="logo">
+      <img src="assets/logo.png" alt="ZA Logo">
+    </div>
+    <div class="english">ZERO ASSOCIATES</div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="assets/hero-bg.jpg" alt="Hero Image">
+    <div class="hero-text">
+      <h1>Delivering Excellence in Trading & Contracting</h1>
+      <p>Professional Services in Qatar – Quality, Safety & Reliability.</p>
+      <a href="#contact" class="btn">Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Zero Associates is a registered Qatari company offering professional trading, contracting, and maintenance services. We specialize in air conditioning, electrical, plumbing, cleaning, and food supply operations with a strong focus on safety, quality, and timely delivery.</p>
+    <div class="values">
+      <div><h3>Mission</h3><p>To deliver world-class contracting and maintenance solutions across Qatar.</p></div>
+      <div><h3>Vision</h3><p>To be the leading name in reliable, innovative, and sustainable services.</p></div>
+      <div><h3>Values</h3><p>Integrity, Safety, Quality, and Customer Satisfaction.</p></div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card" onclick="showService(1)">Air Conditioning & Refrigeration</div>
+      <div class="service-card" onclick="showService(2)">Electrical & Plumbing</div>
+      <div class="service-card" onclick="showService(3)">Cleaning & Maintenance</div>
+      <div class="service-card" onclick="showService(4)">Painting & Technical Works</div>
+      <div class="service-card" onclick="showService(5)">Food Trading & Supply</div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="assets/gallery1.jpg" alt="Gallery 1">
+      <img src="assets/gallery2.jpg" alt="Gallery 2">
+      <img src="assets/gallery3.jpg" alt="Gallery 3">
+    </div>
+  </section>
+
+  <!-- Q&A -->
+  <section class="faq" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button>What services does Zero Associates provide?</button>
+      <div class="faq-content"><p>We offer trading, contracting, and maintenance services across Qatar including AC, plumbing, electrical, cleaning, painting, and food trading.</p></div>
+    </div>
+    <div class="faq-item">
+      <button>How can I request a quote?</button>
+      <div class="faq-content"><p>Click “Request a Quote” or contact info@zeroassociates.com / +974 5509 2962.</p></div>
+    </div>
+    <div class="faq-item">
+      <button>Do you provide annual maintenance contracts?</button>
+      <div class="faq-content"><p>Yes, we offer AMCs for both residential and commercial clients.</p></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Doha, Qatar | 📞 +974 5509 2962 | ✉️ info@zeroassociates.com</p>
+    <p>CR No: 123456 | © 2025 Zero Associates. All Rights Reserved.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Zero Associates – Trading, Contracting & Maintenance Services, Qatar.</p>
+    <p>Developed & Designed by: <strong>VIMESH VENU</strong> | Freelance Web Developer | Thrissur, Kerala, India</p>
+    <p>📧 vimeshvenu234@gmail.com</p>
+  </footer>
+
+  <!-- Chatbot -->
+  <div id="chatbot">
+    <button onclick="toggleChat()">💬</button>
+    <div class="chatbox" id="chatbox">
+      <p><b>ZeroBot:</b> Hi! How can I assist you today?</p>
+      <button onclick="scrollToSection('services')">View Services</button>
+      <button onclick="scrollToSection('faq')">FAQs</button>
+      <button onclick="scrollToSection('contact')">Contact</button>
+    </div>
+  </div>
+
+</body>
+</html>

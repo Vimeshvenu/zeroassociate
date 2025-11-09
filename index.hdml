@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero Associates | Qatar</title>
+  <meta name="description" content="Zero Associates – Trading, Contracting & Maintenance Services in Qatar. Excellence in AC, Electrical, Cleaning, and Food Supply solutions." />
+  <meta name="keywords" content="Zero Associates, Qatar, AC, Cleaning, Electrical, Plumbing, Maintenance, Construction, Trading, Doha">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="arabic">زيرو أسوشيتس</div>
+    <div class="logo"><img src="assets/logo.png" alt="ZA Logo"></div>
+    <div class="english">ZERO ASSOCIATES</div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="assets/hero-bg.jpg" alt="Doha Skyline">
+    <div class="hero-text">
+      <h1>Delivering Excellence in Trading & Contracting</h1>
+      <p>Professional, reliable, and innovative service across Qatar.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Zero Associates is a leading Qatar-based company providing Trading, Contracting, and Maintenance services. With a decade of professional experience, our mission is to deliver reliable, efficient, and sustainable solutions that meet international standards.</p>
+  </section>
+
+  <!-- Mission -->
+  <section class="mission">
+    <h2>Mission & Vision</h2>
+    <p>To build long-term partnerships with clients by delivering superior quality, safety, and value through innovative technology and skilled professionals.</p>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card" onclick="showModal(0)">Air Conditioning & Refrigeration</div>
+      <div class="service-card" onclick="showModal(1)">Cleaning & Maintenance</div>
+      <div class="service-card" onclick="showModal(2)">Electrical & Plumbing</div>
+      <div class="service-card" onclick="showModal(3)">Painting & Technical Works</div>
+      <div class="service-card" onclick="showModal(4)">Construction & Civil</div>
+      <div class="service-card" onclick="showModal(5)">Food Trading & Supply</div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="assets/gallery1.jpg" alt="AC Work">
+      <img src="assets/gallery2.jpg" alt="Cleaning">
+      <img src="assets/gallery3.jpg" alt="Painting">
+      <img src="assets/gallery4.jpg" alt="Electrical Work">
+      <img src="assets/gallery5.jpg" alt="Construction">
+      <img src="assets/gallery6.jpg" alt="Food Trading">
+    </div>
+  </section>
+
+  <!-- Google Map -->
+  <section class="map-section">
+    <h2>Our Location</h2>
+    <p>Find us at the heart of Doha, Qatar.</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3629.627420423248!2d51.53104057534811!3d25.28544743145246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c5c4b0bbf9f5%3A0x2a8d5df8e705f4a!2sDoha%2C%20Qatar!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+        width="100%" height="400" style="border:0; border-radius:15px;" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h2>Contact Us</h2>
+    <p>📍 Doha, Qatar | 📞 +974 5509 2962 | ✉️ info@zeroassociates.com</p>
+    <p>CR No: 123456 | © 2025 Zero Associates. All Rights Reserved.</p>
+    <p>Developed & Designed by <strong>VIMESH VENU</strong> | Thrissur, Kerala | 📧 vimeshvenu234@gmail.com</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,23 +1,15 @@
-// Scroll animation
-window.addEventListener("scroll", () => {
-  document.querySelectorAll("section, .service-card, .gallery img").forEach(el => {
-    const pos = el.getBoundingClientRect().top;
-    if (pos < window.innerHeight - 100) {
-      el.style.opacity = 1;
-      el.style.transform = "translateY(0)";
+window.onload = () => {
+  const chatBody = document.getElementById("chatBody");
+  chatBody.innerHTML = "<p>Hello! 👋 How can we help you today?</p>";
+};
+
+document.getElementById("chatInput").addEventListener("keypress", e => {
+  if (e.key === "Enter") {
+    const chatBody = document.getElementById("chatBody");
+    const msg = e.target.value.trim();
+    if (msg) {
+      chatBody.innerHTML += `<p><strong>You:</strong> ${msg}</p>`;
+      e.target.value = "";
     }
-  });
+  }
 });
-
-// FAQ toggle
-document.querySelectorAll(".faq-item h3").forEach(q => {
-  q.addEventListener("click", () => {
-    const p = q.nextElementSibling;
-    p.style.display = p.style.display === "block" ? "none" : "block";
-  });
-});
-
-// Chatbot
-const chatBtn = document.getElementById("chatBtn");
-const chatBox = document.getElementById("chatBox");
-chatBtn.addEventListener("click", () => chatBox.classList.toggle("hidden"));

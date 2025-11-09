@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero Associates | Qatar</title>
+
+  <!-- 🔍 SEO Meta -->
+  <meta name="description" content="Zero Associates – Qatar’s trusted company for Trading, Contracting & Maintenance Services. Delivering quality, safety, and reliability.">
+  <meta name="keywords" content="Zero Associates, Qatar Contracting, Trading, Maintenance, Cleaning, AC Service, Technical Works, Doha">
+  <meta name="author" content="Vimesh Venu">
+
+  <!-- 🌐 Social Preview -->
+  <meta property="og:title" content="Zero Associates | Qatar">
+  <meta property="og:description" content="Trading, Contracting & Maintenance Services — Delivering Excellence in Qatar.">
+  <meta property="og:image" content="https://vimeshvenu.github.io/zeroassociate-final-pro/assets/logo.png">
+  <meta property="og:url" content="https://vimeshvenu.github.io/zeroassociate-final-pro/">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="arabic">زيرو أسوشيتس</div>
+    <div class="logo"><img src="assets/logo.png" alt="ZA Logo"></div>
+    <div class="english">ZERO ASSOCIATES</div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="assets/hero-bg.jpg" alt="Hero Background" />
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Delivering Excellence in Trading & Contracting</h1>
+      <p>Providing trusted services across Qatar — Air Conditioning, Maintenance, Cleaning & Technical Works.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Zero Associates is a Qatar-based company established to provide high-quality Trading, Contracting, and Maintenance Services. 
+       We combine technical expertise, modern tools, and a client-first approach to ensure every project meets international standards. 
+       Our experienced team delivers reliable, safe, and innovative solutions for residential, commercial, and industrial clients across Qatar.</p>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="mission">
+    <h2>Our Mission & Vision</h2>
+    <p><strong>Mission:</strong> To deliver world-class contracting and maintenance solutions with professionalism and integrity, ensuring quality in every step.</p>
+    <p><strong>Vision:</strong> To become Qatar’s most trusted and preferred name in trading and maintenance excellence by focusing on innovation and customer satisfaction.</p>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card"><strong>Air Conditioning & Refrigeration</strong><br>Complete HVAC installation, repair, and maintenance for residential and commercial projects.</div>
+      <div class="service-card"><strong>Cleaning & Maintenance</strong><br>Professional cleaning, deep sanitation, and scheduled maintenance services.</div>
+      <div class="service-card"><strong>Electrical & Plumbing</strong><br>Certified electrical and plumbing solutions ensuring safety and efficiency.</div>
+      <div class="service-card"><strong>Painting & Technical Works</strong><br>Interior & exterior painting, waterproofing, and building maintenance services.</div>
+      <div class="service-card"><strong>Food Trading & Supply</strong><br>Wholesale and retail distribution of quality food products across Qatar.</div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="assets/gallery1.jpg" alt="Work 1">
+      <img src="assets/gallery2.jpg" alt="Work 2">
+      <img src="assets/gallery3.jpg" alt="Work 3">
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>Do you operate across all regions of Qatar?</summary>
+      <p>✅ Yes, we provide services across Doha, Al Rayyan, Al Wakrah, Lusail, and nearby areas.</p>
+    </details>
+    <details>
+      <summary>Are your technicians certified?</summary>
+      <p>✅ Our team members are certified professionals trained under international safety and quality standards.</p>
+    </details>
+    <details>
+      <summary>Can I request a free inspection?</summary>
+      <p>✅ Yes, we offer free inspection and quotations for long-term projects and partnerships.</p>
+    </details>
+    <details>
+      <summary>Do you offer annual maintenance contracts (AMC)?</summary>
+      <p>✅ Yes, customized AMC plans are available for residential and corporate clients.</p>
+    </details>
+  </section>
+
+  <!-- Chatbot -->
+  <div class="chatbot" id="chatbot">
+    <div class="chat-header">💬 How can we help you?</div>
+    <div class="chat-body" id="chatBody"></div>
+    <input type="text" id="chatInput" placeholder="Type your message..." />
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <h2>Contact Us</h2>
+    <p>📍 Doha, Qatar | 📞 +974 5509 2962 | ✉️ info@zeroassociates.com</p>
+    <p>CR No: 123456 | © 2025 Zero Associates. All Rights Reserved.</p>
+    <div class="credit">
+      Developed & Designed by <strong>VIMESH VENU</strong><br>
+      Freelance Web Developer & Creative Designer | Thrissur, Kerala, India<br>
+      📧 vimeshvenu234@gmail.com
+    </div>
+  </footer>
+</body>
+</html>

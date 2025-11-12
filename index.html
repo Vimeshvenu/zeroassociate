@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zero Associate – Trading, Contracting & Maintenance Services | Qatar</title>
+  <meta name="description" content="Zero Associate – Trading, Contracting & Maintenance Services in Qatar. AC, Electrical, Cleaning, Painting, Construction, Food Trading."/>
+  <meta name="keywords" content="Zero Associate, Qatar, Contracting, Maintenance, Trading, Doha" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header (Arabic - Center logo - English) -->
+  <header class="header container">
+    <div class="arabic">زيرو أسوشيتس</div>
+    <div class="logo center"><img src="assets/logo.png" alt="Zero Associate Logo"></div>
+    <div class="english">ZERO ASSOCIATE</div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="assets/hero-bg.jpg" alt="Doha Skyline" class="hero-bg" />
+    <div class="hero-text container">
+      <h1>ZERO ASSOCIATE – Delivering Excellence in Trading, Contracting & Maintenance</h1>
+      <p>Your trusted partner in Qatar for professional services, maintenance and supply solutions.</p>
+      <a class="btn" href="#contact">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about container fade-in">
+    <h2>About Us</h2>
+    <p><strong>Zero Associate – Trading, Contracting and Maintenance Services</strong> is a Qatar-based enterprise providing professional solutions across contracting, facility maintenance and trading verticals. We prioritize safety, quality and client satisfaction while maintaining international standards.</p>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="mission container fade-in">
+    <div class="mission-grid">
+      <article class="mission-card">
+        <h3>Our Mission</h3>
+        <p>Deliver reliable, sustainable and innovative solutions that exceed client expectations while keeping safety and compliance at the core.</p>
+      </article>
+      <article class="mission-card">
+        <h3>Our Vision</h3>
+        <p>To become Qatar's most trusted contracting, trading and facility services partner with proven international standards by 2030.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Services: detailed (click each to expand for more) -->
+  <section id="services" class="services container fade-in">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card" data-service="ac">
+        <h3>Air Conditioning & Refrigeration</h3>
+        <p>Installation, preventive maintenance, emergency repairs, gas top-up, VRF and split systems. We work with commercial & residential clients and provide planned maintenance contracts.</p>
+      </div>
+      <div class="service-card" data-service="cleaning">
+        <h3>Cleaning & Facility Maintenance</h3>
+        <p>Daily/weekly cleaning, deep cleaning, disinfection, window & façade cleaning, and facility upkeep with trained teams and industry-grade equipment.</p>
+      </div>
+      <div class="service-card" data-service="electrical">
+        <h3>Electrical & Plumbing</h3>
+        <p>Full electrical installations, troubleshooting, panel upgrades, lighting solutions and plumbing services including leak detection and sanitary works.</p>
+      </div>
+      <div class="service-card" data-service="painting">
+        <h3>Painting & Technical Works</h3>
+        <p>Surface preparation, protective coatings, interior & exterior painting, specialized waterproofing and technical finishing for commercial fit-outs.</p>
+      </div>
+      <div class="service-card" data-service="construction">
+        <h3>Construction & Fit-Out</h3>
+        <p>Small to medium fit-outs, partitioning, tiling, flooring, minor civil works and turnkey interior solutions with quality control and safety supervision.</p>
+      </div>
+      <div class="service-card" data-service="trading">
+        <h3>Food Trading & Supply</h3>
+        <p>Reliable sourcing, warehousing and supply chain services for food products. Modern cold-chain handling and transparent logistics for B2B customers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery container fade-in">
+    <h2>Our Works</h2>
+    <div class="gallery-grid">
+      <img src="assets/gallery1.jpg" alt="AC Service">
+      <img src="assets/gallery2.jpg" alt="Cleaning">
+      <img src="assets/gallery3.jpg" alt="Painting">
+      <img src="assets/gallery4.jpg" alt="Electrical">
+      <img src="assets/gallery5.jpg" alt="Construction">
+      <img src="assets/gallery6.jpg" alt="Warehouse">
+    </div>
+  </section>
+
+  <!-- FAQ (expandable) -->
+  <section class="faq container fade-in">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>Do you offer 24/7 maintenance services?</h3>
+      <p>Yes — emergency support is available around the clock across Doha and nearby regions. Long term maintenance contracts and priority response are offered for clients on SLA.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How can I request a quotation?</h3>
+      <p>Use the contact form below, email <strong>info@zeroassociate.com</strong> or call +974 5509 2962. For large projects we provide site inspection and formal proposals.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What areas do you cover?</h3>
+      <p>We operate across Doha and greater Qatar. For trading & warehousing, we service national distribution networks.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact container fade-in">
+    <h2>Contact Us</h2>
+
+    <form id="contact-form" name="submit-to-google-sheet">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="Email" placeholder="Your Email" required>
+      <input type="text" name="Phone" placeholder="Phone (optional)">
+      <textarea name="Message" placeholder="Your Message / Project details" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <iframe class="map" src="https://www.google.com/maps?q=Doha%20Qatar&output=embed" loading="lazy"></iframe>
+  </section>
+
+  <!-- Chatbot -->
+  <div id="chatbot">
+    <button id="chat-btn">💬 Chat with ZERO Assistant</button>
+    <div id="chat-box" class="hidden" role="dialog" aria-hidden="true">
+      <div class="chat-header">ZERO Assistant 🤖</div>
+      <div class="chat-body" id="chat-body">
+        <p>Hello! How can I help you today?</p>
+        <button class="chat-option" data-reply="Our Services">Our Services</button>
+        <button class="chat-option" data-reply="Contact Info">Contact Info</button>
+        <button class="chat-option" data-reply="Location">Location</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="container">
+    <p>📍 Doha, Qatar | 📞 +974 5509 2962 | ✉️ info@zeroassociate.com | hr@zeroassociate.com</p>
+    <p><a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+    <p>© 2025 Zero Associate – Trading, Contracting and Maintenance Services, Qatar.<br>
+    Developed & Designed by <strong>VIMESH VENU</strong> | Thrissur, Kerala, India | 📧 vimeshvenu234@gmail.com</p>
+  </footer>
+
+</body>
+</html>

@@ -29,7 +29,7 @@ document.querySelectorAll('.chat-option').forEach(btn => {
     const chatBody = document.getElementById('chat-body');
     let response = "";
     if (reply === "Our Services") response = "We offer AC, Cleaning, Electrical, Painting, Construction & Food Trading.";
-    else if (reply === "Contact Info") response = "📧 info@zeroassociates.com | 📞 +974 5509 2962";
+    else if (reply === "Contact Info") response = "📧 info@zeroassociate.com | 📞 +974 5509 2962";
     else if (reply === "Location") response = "📍 Doha, Qatar";
     chatBody.innerHTML += `<p><strong>You:</strong> ${reply}</p><p><strong>Bot:</strong> ${response}</p>`;
   });

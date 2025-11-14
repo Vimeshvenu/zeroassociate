@@ -4,9 +4,18 @@
    ============================================================ */
 
 :root {
-    --primary: #6C4ECF;
-    --primary-dark: #5B3FBF;
-    --link: #6C4ECF;
+  /* Zero Associate official purple */
+  --za-primary: #6C4ECF;
+  --za-primary-dark: #5B3FBF;
+
+  /* Backwards-compatible names (map old names to new) */
+  --primary: var(--za-primary);
+  --primary-dark: var(--za-primary-dark);
+
+  /* Bootstrap variable overrides (if site uses bootstrap vars) */
+  --bs-primary: var(--za-primary);
+  --bs-primary-rgb: 108,78,207; /* used by some components expecting rgb */
+}
 }
 
 /* All links */

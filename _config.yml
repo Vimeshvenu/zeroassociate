@@ -2,3 +2,4 @@
 theme: null
 plugins: []
 markdown: GFM
+jekyll: false

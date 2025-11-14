@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
      CONFIG - CHANGE THIS
      =========================== */
   // Replace with your Google Apps Script Web App URL (published as "Anyone, even anonymous" if needed)
-  const scriptURL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
+  const scriptURL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"; // <-- replace this with your Apps Script URL
 
   // WhatsApp phone + message (use international format without +)
   const whatsappNumber = "97455092962"; // Qatari number without +
@@ -21,24 +21,27 @@ document.addEventListener("DOMContentLoaded", () => {
      =========================== */
   const navToggle = document.getElementById("mobile-nav-toggle");
   const navMenu = document.querySelector(".nav-menu");
-  if (navToggle && navMenu) {
+  if (navToggle) {
     navToggle.addEventListener("click", () => {
+      if (!navMenu) return;
       navMenu.classList.toggle("active");
       const isOpen = navMenu.classList.contains("active");
       navToggle.setAttribute("aria-expanded", isOpen);
-      navToggle.innerHTML = isOpen ? '✕' : '&#9776;';
+      navToggle.innerText = isOpen ? "✕" : "☰";
     });
 
     // close on nav link click
-    navMenu.querySelectorAll("a").forEach(a => {
-      a.addEventListener("click", () => {
-        if (navMenu.classList.contains("active")) {
-          navMenu.classList.remove("active");
-          navToggle.setAttribute("aria-expanded", "false");
-          navToggle.innerHTML = '&#9776;';
-        }
+    if (navMenu) {
+      navMenu.querySelectorAll("a").forEach(a => {
+        a.addEventListener("click", () => {
+          if (navMenu.classList.contains("active")) {
+            navMenu.classList.remove("active");
+            navToggle.setAttribute("aria-expanded", "false");
+            navToggle.innerText = "☰";
+          }
+        });
       });
-    });
+    }
   }
 
   /* ===========================
@@ -49,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function setActiveNav() {
     let current = "";
     sections.forEach(sec => {
-      const top = sec.offsetTop - 120;
+      const top = sec.offsetTop - 140;
       if (window.pageYOffset >= top) current = sec.getAttribute("id");
     });
     navLinks.forEach(link => {
@@ -75,11 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ===========================
      FAQ ACCORDION
-     - HTML structure expected:
-       <div class="faq-item">
-         <button class="faq-question">Question</button>
-         <div class="faq-answer"><p>Answer</p></div>
-       </div>
      =========================== */
   document.querySelectorAll(".faq-question").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -101,11 +99,118 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ===========================
      CHATBOT (simple rule-based)
-     HTML expected:
-     - #chatbot-fab (button)
-     - #chatbot-window (container)
-     - .chat-quick-reply buttons with data-reply
-     - #chatbot-body to append messages
+     =========================== */
+  const chatFab = document.getElementById("chatbot-fab");
+  const chatWindow = document.getElementById("chatbot-window");
+  const chatClose = document.getElementById("chatbot-close");
+  const chatBody = document.getElementById("chatbot-body");
+
+  const botReplies = {
+    "Our Services": "We provide AC & Refrigeration, Specialised Cleaning, Hospitality Cleaning, Food Trading, Flooring & Painting. For details click the Services section or contact us.",
+    "Contact Info": "Phone: +974 5509 2962\nEmail: info@zeroassociate.com",
+    "Location": "Doha, Qatar"
+  };
+
+  function addChatMessage(text, sender = "bot") {
+    if (!chatBody) return;
+    const wrapper = document.createElement("div");
+    wrapper.className = `chat-message ${sender}`;
+    const bubble = document.createElement("div");
+    bubble.className = "chat-bubble";
+    bubble.innerHTML = text.replace(/\n/g, "<br>");
+    wrapper.appendChild(bubble);
+    chatBody.appendChild(wrapper);
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+
+  if (chatFab) {
+    chatFab.addEventListener("click", () => chatWindow.classList.toggle("active"));
+  }
+  if (chatClose) {
+    chatClose.addEventListener("click", () => chatWindow.classList.remove("active"));
+  }
+  document.querySelectorAll(".chat-quick-reply").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const q = btn.dataset.reply;
+      addChatMessage(q, "user");
+      setTimeout(() => {
+        const r = botReplies[q] || "Sorry, I didn't get that. Please choose an option.";
+        addChatMessage(r, "bot");
+      }, 400);
+    });
+  });
+
+  /* ===========================
+     WHATSAPP FAB
+     =========================== */
+  const waBtn = document.querySelector(".whatsapp-fab");
+  if (waBtn) {
+    waBtn.addEventListener("click", () => {
+      const url = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+      window.open(url, "_blank");
+    });
+  }
+
+  /* ===========================
+     CONTACT FORM -> Google Apps Script
+     =========================== */
+  const form = document.forms["submit-to-google-sheet"] || document.getElementById("contact-form");
+  const formMessage = document.getElementById("form-message");
+
+  if (form) {
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const name = (formData.get("Name") || formData.get("name") || "").toString().trim();
+      const email = (formData.get("Email") || formData.get("email") || "").toString().trim();
+      const message = (formData.get("Message") || formData.get("message") || "").toString().trim();
+
+      if (!name || !email || !message) {
+        alert("Please fill all required fields.");
+        return;
+      }
+
+      const submitButton = form.querySelector("button[type='submit']") || form.querySelector("button");
+      if (submitButton) { submitButton.disabled = true; submitButton.innerText = "Sending..."; }
+
+      fetch(scriptURL, { method: "POST", body: formData })
+        .then(resp => {
+          if (submitButton) { submitButton.disabled = false; submitButton.innerText = "Send Message"; }
+          if (formMessage) {
+            formMessage.className = "form-message success";
+            formMessage.innerText = `Thank you ${name}! Your message was sent.`;
+            setTimeout(() => formMessage.className = "form-message", 4000);
+          } else {
+            alert("Message sent successfully! We will contact you soon.");
+          }
+          form.reset();
+        })
+        .catch(err => {
+          console.error("Form submit error:", err);
+          if (submitButton) { submitButton.disabled = false; submitButton.innerText = "Send Message"; }
+          if (formMessage) {
+            formMessage.className = "form-message error";
+            formMessage.innerText = "Error sending message. Please try again.";
+            setTimeout(() => formMessage.className = "form-message", 4000);
+          } else {
+            alert("Error sending message. Please try again.");
+          }
+        });
+    });
+  }
+
+  /* ===========================
+     SMALL HELPERS
+     =========================== */
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      if (navMenu && navMenu.classList.contains("active")) navMenu.classList.remove("active");
+      if (chatWindow && chatWindow.classList.contains("active")) chatWindow.classList.remove("active");
+    }
+  });
+
+}); // DOMContentLoaded end     - #chatbot-body to append messages
      =========================== */
   const chatFab = document.getElementById("chatbot-fab");
   const chatWindow = document.getElementById("chatbot-window");

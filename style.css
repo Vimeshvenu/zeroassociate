@@ -1,17 +1,27 @@
 /* Basic Resets & Global Styles */
+/* Zero Associate Purple Theme Override */
 :root {
-    --primary-color: #007bff; /* Blue */
-    --secondary-color: #6c757d; /* Grey */
-    --accent-color: #28a745; /* Green for success/highlights */
-    --dark-bg: #212529; /* Dark background */
-    --light-bg: #f8f9fa; /* Light background */
-    --text-color: #333;
-    --white-color: #fff;
-    --border-color: #dee2e6;
-    --shadow-light: 0 4px 10px rgba(0, 0, 0, 0.1);
-    --shadow-medium: 0 8px 20px rgba(0, 0, 0, 0.15);
-    --border-radius: 8px;
-    --transition-speed: 0.3s ease;
+    --primary: #6C4ECF;
+    --primary-dark: #5B3FBF;
+}
+
+a, 
+h3, 
+.nav a,
+.service-item h3,
+.features-grid h3 {
+    color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
 }
 
 *, *::before, *::after {

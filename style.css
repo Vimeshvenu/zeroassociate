@@ -1,4 +1,82 @@
-/* Basic Resets & Global Styles */
+/* ============================================================
+   🔵 REPLACE BLUE → 🟣 ZEROASSOCIATE PURPLE THEME OVERRIDE
+   (Add this entire block to the END of style.css)
+   ============================================================ */
+
+:root {
+    --primary: #6C4ECF;
+    --primary-dark: #5B3FBF;
+    --link: #6C4ECF;
+}
+
+/* All links */
+a, a:visited {
+    color: var(--link) !important;
+}
+
+a:hover {
+    color: var(--primary-dark) !important;
+}
+
+/* All headings in service cards */
+.service-item h3,
+.features-grid h3,
+.features-grid h2,
+.services-box h3 {
+    color: var(--primary) !important;
+}
+
+/* Section Titles (Our Core Services etc.) */
+section h2 {
+    color: var(--primary) !important;
+}
+
+/* All buttons */
+.btn,
+.btn-primary,
+button,
+.call-btn {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: #ffffff !important;
+}
+
+.btn:hover,
+.btn-primary:hover,
+button:hover,
+.call-btn:hover {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+/* Navigation active */
+.nav a.active,
+.nav-menu a.active {
+    color: var(--primary) !important;
+}
+
+/* Navigation hover */
+.nav a:hover,
+.nav-menu a:hover {
+    color: var(--primary-dark) !important;
+}
+
+/* Mobile menu icon */
+#mobile-nav-toggle {
+    color: var(--primary) !important;
+}
+
+/* Icon recolor (optional — keeps brand tone) */
+.features-grid img,
+.service-item img {
+    filter: hue-rotate(270deg) saturate(150%);
+}
+
+/* Underline links */
+a {
+    border-color: var(--primary) !important;
+}
+/* ============================================================ *//* Basic Resets & Global Styles */
 /* Zero Associate Purple Theme Override */
 :root {
     --primary: #6C4ECF;

@@ -253,3 +253,95 @@ document.addEventListener('DOMContentLoaded', function() {
         console.warn('Chatbot elements not found.');
     }
 });
+/* ====== ZEROASSOCIATE header + FAB behaviour (append to end of js/script.js) ====== */
+(function(){
+  // mobile nav toggle (button id mobile-nav-toggle)
+  const navToggle = document.getElementById('mobile-nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  if(navToggle){
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !expanded);
+      if(navMenu) navMenu.classList.toggle('active');
+    });
+  }
+
+  // dropdown accessibility: set aria-expanded on click
+  document.querySelectorAll('.dropbtn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      // toggle sibling dropdown-content
+      const dd = btn.nextElementSibling;
+      if(dd) dd.style.display = expanded ? 'none' : 'block';
+    });
+  });
+
+  // Floating FABs: WhatsApp, Call, Chatbot - create elements if not present
+  // WhatsApp FAB
+  if(!document.querySelector('.fab.whatsapp')){
+    const wa = document.createElement('a');
+    wa.className = 'fab whatsapp';
+    wa.href = 'https://wa.me/97455092962?text=' + encodeURIComponent("Hello Zero Associate — I'd like a quote.");
+    wa.target = '_blank';
+    wa.rel = 'noopener';
+    wa.innerHTML = '<img src="/assets/whatsapp-icon.png" alt="WhatsApp">';
+    document.body.appendChild(wa);
+  }
+
+  // Call FAB
+  if(!document.querySelector('.fab.call')){
+    const call = document.createElement('a');
+    call.className = 'fab call';
+    call.href = 'tel:+97455092962';
+    call.setAttribute('aria-label','Call Zero Associate');
+    call.innerHTML = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="M6.6 10.8c1.1 2.1 2.7 4 4.7 5.4l1.8-1.8c.2-.2.5-.3.8-.2 1 .3 2 .5 3.1.5.5 0 1 .4 1 1V20c0 .6-.4 1-1 1C9.2 21 3 14.8 3 6c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.1.2 2.1.6 3.1.1.3 0 .6-.2.8L6.6 10.8z"/></svg>';
+    document.body.appendChild(call);
+  }
+
+  // Chatbot FAB + window
+  if(!document.querySelector('.fab.chatbot')){
+    const chatFab = document.createElement('button');
+    chatFab.className = 'fab chatbot';
+    chatFab.type = 'button';
+    chatFab.setAttribute('aria-label','Open chat');
+    chatFab.innerHTML = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="M4 4h16v12H7l-3 3V4z"/></svg>';
+    document.body.appendChild(chatFab);
+
+    // chat window
+    const chatWindow = document.createElement('div');
+    chatWindow.id = 'za-chat-window';
+    chatWindow.innerHTML = `
+      <div class="chat-header">Zero Assistant <button id="za-chat-close" style="background:none;border:none;color:white;font-weight:700;cursor:pointer">✕</button></div>
+      <div class="chat-body"><div class="bot-msg" style="padding:8px;border-radius:8px;background:rgba(108,78,207,0.08);margin-bottom:8px;">Hi — welcome! How can I help you today?</div></div>
+      <div class="chat-input"><input id="za-chat-input" type="text" placeholder="Type your message..." aria-label="Type message"><button id="za-chat-send" class="btn btn-primary">Send</button></div>
+    `;
+    document.body.appendChild(chatWindow);
+
+    const zaChatWindow = document.getElementById('za-chat-window');
+    const zaChatClose = document.getElementById('za-chat-close');
+    chatFab.addEventListener('click', () => zaChatWindow.classList.toggle('active'));
+    if(zaChatClose) zaChatClose.addEventListener('click', () => zaChatWindow.classList.remove('active'));
+
+    // quick send (local, rule-based replies)
+    const zaChatSend = document.getElementById('za-chat-send');
+    const zaChatInput = document.getElementById('za-chat-input');
+    const zaChatBody = document.querySelector('#za-chat-window .chat-body');
+    if(zaChatSend && zaChatInput && zaChatBody){
+      zaChatSend.addEventListener('click', () => {
+        const txt = zaChatInput.value.trim();
+        if(!txt) return;
+        // append user msg
+        const um = document.createElement('div'); um.className = 'user-message'; um.style.cssText = 'background:var(--primary);color:white;padding:8px;border-radius:8px;margin-bottom:8px;align-self:flex-end;max-width:80%'; um.textContent = txt;
+        zaChatBody.appendChild(um);
+        zaChatInput.value = '';
+        // bot reply (simple)
+        setTimeout(()=> {
+          const bm = document.createElement('div'); bm.className='bot-message'; bm.style.cssText='background:var(--light-bg);padding:8px;border-radius:8px;margin-bottom:8px;max-width:80%'; bm.innerHTML = 'Thanks — we received your message. We will contact you shortly. For quick quotes call +974 5509 2962';
+          zaChatBody.appendChild(bm);
+          zaChatBody.scrollTop = zaChatBody.scrollHeight;
+        }, 600);
+      });
+    }
+  }
+})();

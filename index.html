@@ -15,36 +15,50 @@
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="assets/logo.png" alt="Zero Associate Logo" width="150">
-            </a>
-            <nav class="nav">
-                <button id="mobile-nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">☰</button>
-                <ul id="nav-menu" class="nav-menu">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#services" class="dropbtn" aria-haspopup="true" aria-expanded="false">Services <span class="dropdown-icon">▼</span></a>
-                        <div class="dropdown-content">
-                            <a href="services/ac-refrigeration.html">AC & Refrigeration</a>
-                            <a href="services/specialised-cleaning.html">Specialised Cleaning</a>
-                            <a href="services/electrical-plumbing.html">Electrical & Plumbing</a>
-                            <a href="services/painting-works.html">Painting Works</a>
-                            <a href="services/construction.html">Construction</a>
-                            <a href="services/flooring-wall-fittings.html">Flooring & Wall Fittings</a>
-                            <a href="services/hospitality-cleaning.html">Hospitality Cleaning</a>
-                            <a href="services/food-trading.html">Food Trading</a>
-                            <a href="services/general-maintenance.html">General Maintenance</a>
-                            <a href="services/emptying-sanitization.html">Emptying & Sanitization</a>
-                        </div>
-                    </li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- ====== REPLACE HEADER START ====== -->
+<header class="za-header">
+  <div class="za-header-inner container">
+    <div class="za-left">
+      <button id="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <a class="logo-link" href="index.html" aria-label="Zero Associate home">
+        <img src="/assets/logo.png" alt="Zero Associate Logo" class="za-logo">
+      </a>
+    </div>
+
+    <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Services ▾</button>
+          <div class="dropdown-content" role="menu">
+            <a href="services/ac-refrigeration.html">AC & Refrigeration</a>
+            <a href="services/specialised-cleaning.html">Specialised Cleaning</a>
+            <a href="services/electrical-plumbing.html">Electrical & Plumbing</a>
+            <a href="services/painting-works.html">Painting & Technical Works</a>
+            <a href="services/construction.html">Construction & Fit-Out</a>
+            <a href="services/flooring-wall-fittings.html">Flooring & Wall Fittings</a>
+            <a href="services/hospitality-cleaning.html">Hospitality Cleaning</a>
+            <a href="services/food-trading.html">Food Trading</a>
+            <a href="services/general-maintenance.html">General Maintenance</a>
+            <a href="services/emptying-sanitization.html">Emptying & Sanitization</a>
+          </div>
+        </li>
+
+        <li><a href="#about">About</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="za-actions">
+      <a class="btn btn-outline" href="assets/Zero_Associate_Brochure.pdf" target="_blank" rel="noopener">Download Brochure</a>
+      <a class="btn btn-primary" href="tel:+97455092962" aria-label="Call now">Call Now</a>
+    </div>
+  </div>
+</header>
+<!-- ====== REPLACE HEADER END ====== -->
 
     <main>
         <section id="hero" class="hero" style="background-image: url('assets/hero-bg.jpg');">

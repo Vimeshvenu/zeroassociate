@@ -94,7 +94,20 @@ button:hover,
 .nav-menu a:hover {
     color: var(--primary-dark) !important;
 }
+/* ====== ZEROASSOCIATE HEADER & FLOATING CTA (append to end of style.css) ====== */
 
+/* header glass / sticky */
+.za-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.55));
+  box-shadow: var(--shadow-light);
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+/* … (full Step 3 CSS continues) … */
 /* Mobile menu icon */
 #mobile-nav-toggle {
     color: var(--primary) !important;

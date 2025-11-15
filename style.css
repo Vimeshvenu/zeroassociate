@@ -3,10 +3,34 @@
    (Add this entire block to the END of style.css)
    ============================================================ */
 
+/* ===========================
+   Zero Associate — Brand vars
+   (Replace ALL existing :root blocks with this single block)
+   =========================== */
 :root {
-  /* Zero Associate official purple */
-  --za-primary: #6C4ECF;
-  --za-primary-dark: #5B3FBF;
+  /* Brand purple */
+  --primary: #6C4ECF;          /* main purple */
+  --primary-dark: #5B3FBF;     /* darker purple */
+
+  /* Old names mapped for compatibility */
+  --primary-color: var(--primary);
+  --primary-dark-color: var(--primary-dark);
+
+  /* Neutrals & UI tokens */
+  --text-color: #1A1A1A;
+  --white-color: #FFFFFF;
+  --light-bg: #F8F9FB;
+  --dark-bg: #111111;
+  --border-color: rgba(0,0,0,0.08);
+  --accent-color: #28C76F; /* optional chat/CTA green */
+  --secondary-color: #6c757d;
+
+  /* Helpers */
+  --transition-speed: 0.25s;
+  --shadow-light: 0 4px 16px rgba(0,0,0,0.05);
+  --shadow-medium: 0 8px 24px rgba(0,0,0,0.08);
+  --border-radius: 12px;
+}
 
   /* Backwards-compatible names (map old names to new) */
   --primary: var(--za-primary);

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ZERO ASSOCIATES — Home</title>
+  <meta name="description" content="ZERO ASSOCIATES - AC, cleaning, flooring, painting & trading in Qatar." />
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">ZA</div>
+        <div class="brand-meta">
+          <strong>ZERO ASSOCIATES</strong>
+          <small>Trading · Contracting · Maintenance</small>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="btn-primary">Contact</a>
+      </nav>
+
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <span class="kicker">Trading · Contracting · Maintenance</span>
+        <h1>Reliable AC, Cleaning & Facility Services in Qatar</h1>
+        <p class="lead">Hood & duct cleaning, AC installation & maintenance, flooring, painting and food trading — delivered safely and on time.</p>
+
+        <p class="hero-ctas">
+          <a href="contact.html" class="btn-primary">Request a Quote</a>
+          <a href="services.html" class="btn-ghost">Our Services</a>
+          <a href="assets/ZERO_ASSOCIATES_BROCHURE.pdf" class="btn-ghost" download>Download Brochure</a>
+        </p>
+
+        <ul class="features">
+          <li>HACCP-compliant cleaning</li>
+          <li>Experienced technicians</li>
+          <li>Nationwide across Qatar</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <img src="assets/images/hero.jpg" alt="Zero Associates hero image">
+      </div>
+    </section>
+
+    <section class="container section">
+      <h2>Featured Services</h2>
+      <div class="services-grid">
+        <a class="card" href="services/hood-cleaning.html"><img src="assets/images/service-hood.jpg" alt=""><h3>Hood & Duct Cleaning</h3></a>
+        <a class="card" href="services/ac.html"><img src="assets/images/service-ac.jpg" alt=""><h3>AC & Refrigeration</h3></a>
+        <a class="card" href="services/flooring.html"><img src="assets/images/service-flooring.jpg" alt=""><h3>Flooring & Painting</h3></a>
+        <a class="card" href="services/hospitality.html"><img src="assets/images/service-hospitality.jpg" alt=""><h3>Hospitality Cleaning</h3></a>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h2>Why Choose Us</h2>
+      <ul class="why-list">
+        <li>Certified teams & HACCP-ready processes</li>
+        <li>Transparent pricing & detailed BOQs</li>
+        <li>Before/after photos & completion certificates</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 ZERO ASSOCIATES</div>
+      <div>Phone: <a href="tel:+97455092962">+974 5509 2962</a> • Email: <a href="mailto:info@zeroassociates.com">info@zeroassociates.com</a></div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

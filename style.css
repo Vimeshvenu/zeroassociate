@@ -1,7 +1,0 @@
-/* Version 4 styles */
-:root{--accent:#2f8f6d;--bg:#f7f7fb;--card:#fff}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#111}
-header{box-shadow:0 4px 18px rgba(0,0,0,0.06)}
-main{background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.9))}
-form input, form textarea{width:100%;padding:8px;border:1px solid #ddd;border-radius:6px}
-button{background:var(--accent);color:#fff;padding:10px 14px;border:0;border-radius:8px;cursor:pointer}
